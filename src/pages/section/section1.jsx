@@ -3,6 +3,7 @@ import { Button, Element } from 'react-scroll';
 import { Events, scrollSpy } from 'react-scroll';
 import { useRef } from 'react';
 import NavigationButtons from '../NavigationButton';
+import Section2 from './section2'
 function Section1() {
     useEffect(() => {
         Events.scrollEvent.register('begin', () => {});
@@ -28,7 +29,8 @@ function Section1() {
             <Element style={{ width: "100vw", height: "100vh", backgroundColor: "lightYellow" }} name="section2" className="element">
                
             <NavigationButtons/>
-            <h1>THIS IS SECTION 2</h1>
+            <Section2/>
+
             </Element>
             <Element style={{ width: "100vw", height: "100vh", backgroundColor: "lightGreen" }} name="section3" className="element">
             <h1>THIS IS SECTION 3</h1>
